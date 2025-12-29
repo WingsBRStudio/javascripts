@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notifications</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="controls">
+        <button class="btn-success" onclick="showToast('success')">
+            <i class="fas fa-check-circle"></i> Success
+        </button>
+        <button class="btn-error" onclick="showToast('error')">
+            <i class="fas fa-times-circle"></i> Error
+        </button>
+        <button class="btn-warning" onclick="showToast('warning')">
+            <i class="fas fa-exclamation-triangle"></i> Warning
+        </button>
+        <button class="btn-info" onclick="showToast('info')">
+            <i class="fas fa-info-circle"></i> Info
+        </button>
+    </div>
+    
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
